@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace pagina de estilos-->
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!--Fuestes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+20&display=swap" rel="stylesheet">
+
+    <title>Pokemon Api</title>
+    <link rel="icon" href="/resources/image/ico.png" type="image/x-icon">
+
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Pokedex</h1>
+
+    </div>
+    <div class="search">
+        <input type="text" id="name" placeholder="Busca tu pokemon">
+        <input type="button" value="Buscar" onclick="buscar();">
+    </div>
+
+    <div class="pokemons" id="pokemon-modal">
+        <div class="img">
+            <span id="image-pokemon"></span>
+        </div>
+        <div class="name">
+            <span id="name-pokemon"></span>
+        </div>
+        <div class="stacks">
+            <span id="hp"></span>
+            <span id="attack"></span>
+            <span id="defense"></span>
+            <span id="special-attack"></span>
+            <span id="special-defense"></span>
+            <span id="speed"></span>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar error-->
+    <div id="pokemon-error">
+        <img src="/resources/image/error404.png" alt="Error 404">
+        <h1>Error 404</h1>
+    </div>
+
+
+</body>
+<script src="/js/backend.js"></script>
+</html>
